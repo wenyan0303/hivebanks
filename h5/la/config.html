@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta id="i18n_pagename" content="index-common">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HiveBanks</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection"/>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet"/>
+    <!-- Custom Styles-->
+    <link href="assets/css/common.css" rel="stylesheet"/>
+    <!--config css-->
+    <link rel="stylesheet" href="assets/css/config.css">
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+
+</head>
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand waves-effect waves-dark flex center" href="userList.html">
+                <img src="assets/img/logo-3.png" alt="" class="width-15 margin-right-5">
+                <strong>HiveBanks</strong>
+            </a>
+
+            <div id="sideNav" class="waves-effect waves-dark" href=""><i class="material-icons dp48">toc</i></div>
+        </div>
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i
+                    class="fa fa-user fa-fw"></i> <b class="la_name"></b> <i
+                    class="material-icons right">keyboard_arrow_down</i></a></li>
+        </ul>
+    </nav>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="javascript:;" class="logOut">
+            <i class="fa fa-sign-out fa-fw"></i>
+            <span class="i18n" name="logout"></span>
+        </a>
+        </li>
+    </ul>
+
+    <!--/. NAV left  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <!--config-->
+                <li>
+                    <a href="config.html" class="active-menu waves-effect waves-dark">
+                        <i class="fa fa-dashboard"></i>
+                        <span class="i18n" name="config"></span>
+                    </a>
+                </li>
+                <!--charts-->
+                <li>
+                    <a href="report.html" class="waves-effect waves-dark">
+                        <i class="fa fa-bar-chart-o"></i>
+                        <span class="i18n" name="charts"></span>
+                    </a>
+                </li>
+                <!--management-->
+                <li>
+                    <a href="javascript:;" class="waves-effect waves-dark">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="i18n" name="management"></span>
+                        <span
+                                class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="userList.html" class="i18n" name="userList"></a>
+                        </li>
+                        <li>
+                            <a href="baList.html" class="i18n" name="bitCoinAgencyList"></a>
+                        </li>
+                        <li>
+                            <a href="caList.html" class="i18n" name="cashAgencyList"></a>
+                        </li>
+                    </ul>
+                </li>
+                <!--transaction-->
+                <li>
+                    <a href="javascript:;" class="waves-effect waves-dark">
+                        <i class="fa fa-btc"></i>
+                        <span class="i18n" name="transaction"></span>
+                        <span
+                                class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="userTransferList.html" class="i18n" name="userTransactionRecode"></a>
+                        </li>
+                        <li>
+                            <a href="baRechargeList.html" class="i18n" name="bitCoinAgencyRechargeRecord"></a>
+                        </li>
+                        <li>
+                            <a href="baWithdrawList.html" class="i18n" name="bitCoinAgencyWithdrawRecord"></a>
+                        </li>
+                        <li>
+                            <a href="caRechargeList.html" class="i18n" name="cashAgencyRechargeRecord"></a>
+                        </li>
+                        <li>
+                            <a href="caWithdrawList.html" class="i18n" name="cashAgencyWithdrawRecord"></a>
+                        </li>
+                    </ul>
+                </li>
+                <!--kyc Review-->
+                <li>
+                    <a href="javascript:;" class="waves-effect waves-dark"><i class="fa fa-lock"></i>
+                        <span class="i18n" name="kyc"></span>
+                        <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="userKyc.html" class="i18n" name="userKyc"></a>
+                        </li>
+                        <li>
+                            <a class="childMenu" name="" href="#!">
+                                <span class="i18n" name="baKyc"></span>
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-third-level none">
+                                <li>
+                                    <a href="baBindKyc.html" class="waves-effect waves-dark i18n" name="bindKyc"></a>
+                                </li>
+                                <li>
+                                    <a href="baRegisterKyc.html" class="i18n" name="registrationReviewList"></a>
+                                </li>
+                                <li>
+                                    <a href="baWithdrawAddressKyc.html" class="i18n" name="withdrawAddressReviewList"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="childMenu" name="" href="#!">
+                                <span class="i18n" name="caKyc"></span>
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-third-level none">
+                                <li>
+                                    <a href="caBindKyc.html" class="waves-effect waves-dark i18n" name="bindKyc"></a>
+                                </li>
+                                <li>
+                                    <a href="caRegisterKyc.html" class="i18n" name="registrationReviewList"></a>
+                                </li>
+                                <li>
+                                    <a href="caWithdrawAddressKyc.html" class="i18n" name="withdrawAddressReviewList"></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!--fault Report-->
+                <li>
+                    <a href="failureReport.html" class="waves-effect waves-dark">
+                        <i class="fa fa-file-text-o"></i>
+                        <span class="i18n" name="declarationList"></span>
+                    </a>
+                </li>
+                <!--news-->
+                <li>
+                    <a href="pressReleases.html" class="waves-effect waves-dark">
+                        <i class="fa fa-plus"></i>
+                        <span class="i18n" name="pressReleases"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header i18n" name="config"></h1>
+            <ol class="breadcrumb">
+                <!--<li><a href="#">Home</a></li>-->
+                <li class="active i18n" name="config"></li>
+            </ol>
+
+        </div>
+        <div id="page-inner">
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="card baseInfoBox">
+                        <div class="card-content">
+                            <div>
+                                <ul>
+                                    <li class="margin-bottom-5">
+                                        <span class="i18n" name="baseCurrencyType"></span>
+                                        <span>:</span>
+                                        <span>
+                                            <a href="javascript:;" class="set base_currency"></a>
+                                        </span>
+                                    </li>
+                                    <li class="margin-bottom-5">
+                                        <span class="i18n" name="digitalCurrencyUnit"></span>
+                                        <span>:</span>
+                                        <span>
+                                            <a href="javascript:;" class="set unit">
+
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li class="margin-bottom-5">
+                                        <span class="i18n" name="creationTime"></span>
+                                        <span>:</span>
+                                        <span>2018/08/08 12:00</span>
+                                    </li>
+                                    <li class="margin-bottom-5">
+                                        <span class="i18n" name="frontEndAddress"></span>
+                                        <span>:</span>
+                                        <span class="h5_url"></span>
+                                    </li>
+                                    <li class="margin-bottom-5">
+                                        <span class="i18n" name="backgroundAddress"></span>
+                                        <span>:</span>
+                                        <span class="api_url"></span>
+                                    </li>
+                                    <li class="margin-bottom-5">
+                                        <a href="errCodeManage.html" class="errCode i18n" name="errorCodeManagement"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="input-field">
+                                <input id="api_key" type="text" class="validate" maxlength="8">
+                                <label for="api_key"></label>
+                            </div>
+                            <div class="align-right">
+                                <span class="i18n" name="current"></span>:
+                                <span class="api_key_value i18n" name="notSet"></span>
+                                <button class="btn btn-success setApiBtn i18n" name="set"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-content">
+                            <h5 class="i18n" name="administratorSettings"></h5>
+                            <div>
+                                <div>
+                                    <h5 class="i18n" name="authorityAllocation"></h5>
+                                    <div class="flex permission">
+                                        <p class="">
+                                            <input type="checkbox" name="1" class="filled-in" id="pid_1"
+                                                   checked="checked"/>
+                                            <label for="pid_1">1</label>
+                                        </p>
+                                        <p class="">
+                                            <input type="checkbox" name="2" class="filled-in" id="pid_2"/>
+                                            <label for="pid_2">2</label>
+                                        </p>
+                                        <p class="">
+                                            <input type="checkbox" name="3" class="filled-in" id="pid_3"/>
+                                            <label for="pid_3">3</label>
+                                        </p>
+                                        <p class="">
+                                            <input type="checkbox" name="4" class="filled-in" id="pid_4"/>
+                                            <label for="pid_4">4</label>
+                                        </p>
+                                        <p class="">
+                                            <input type="checkbox" name="5" class="filled-in" id="pid_5"/>
+                                            <label for="pid_5">5</label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-field">
+                                        <input id="name" type="text" class="validate">
+                                        <label for="name" class="i18n" name="actualName"></label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input id="userName" type="text" class="validate" autocomplete="false">
+                                        <label for="userName" class="i18n"
+                                               name="administratorName"></label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input id="password" type="password" class="validate" autocomplete="false">
+                                        <label for="password" class="i18n" name="password">password</label>
+                                    </div>
+                                </div>
+                                <div class="align-right">
+                                    <button class="permissionBtn btn btn-success btn-sm i18n" name="determine"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--短信接口配置/邮箱接口配置/文件上传接口配置-->
+            <div class="row">
+                <div class="col col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="card-content">
+                            <h5 class="i18n" name="configServer"></h5>
+                            <div>
+                                <div class="configServerItem flex center space-between">
+                                    <div class="width-50">
+                                        <p class="width-30 text-left">
+                                            <input class="with-gap radioFile" name="group1" type="radio" value="1"
+                                                   id="uploadFileInput"/>
+                                            <label for="uploadFileInput" class="i18n configServerText" name="uploadFiles"></label>
+                                        </p>
+                                        <p class="input-field keyBox none">
+                                            <input id="keyFile" type="text" class="validate">
+                                            <label for="keyFile">KEY</label>
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <span><i class="iconfont icon-gantanhao color-red iconFile"></i></span>
+                                        <span class="openStatus noOpenFile i18n" name="noOpen"></span>
+                                        <span class="none openStatus alreadyOpenFile i18n" name="alreadyOpen"></span>
+                                        <!--<span class="none openStatus i18n underReviewFile" name="underReview"></span>-->
+                                    </p>
+                                </div>
+                                <div class="configServerItem flex center space-between">
+                                    <div class="width-50">
+                                        <p class="width-30 text-left">
+                                            <input class="with-gap radioSms" name="group1" type="radio" value="2"
+                                                   id="smsConfig"/>
+                                            <label for="smsConfig" class="i18n configServerText" name="sms"></label>
+                                        </p>
+                                        <p class="input-field keyBox none">
+                                            <input id="keySms" type="text" class="validate">
+                                            <label for="keySms">KEY</label>
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <span><i class="iconfont icon-gantanhao color-red iconSms"></i></span>
+                                        <span class="openStatus noOpenSms i18n" name="noOpen"></span>
+                                        <span class="none openStatus alreadyOpenSms i18n" name="alreadyOpen"></span>
+                                        <!--<span class="none openStatus i18n underReviewSms" name="underReview"></span>-->
+                                    </p>
+                                </div>
+                                <div class="configServerItem flex center space-between">
+                                    <div class="width-50">
+                                        <p class="width-30 text-left">
+                                            <input class="with-gap radioEmail" name="group1" type="radio" value="3"
+                                                   id="emailConfig"/>
+                                            <label for="emailConfig" class="i18n configServerText" name="email"></label>
+                                        </p>
+                                        <p class="input-field keyBox none">
+                                            <input id="keyEmail" type="text" class="validate">
+                                            <label for="keyEmail">KEY</label>
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <span><i class="iconfont icon-gantanhao color-red iconEmail"></i></span>
+                                        <span class="openStatus noOpenEmail i18n" name="noOpen"></span>
+                                        <span class="none openStatus alreadyOpenEmail i18n" name="alreadyOpen"></span>
+                                        <!--<span class="none openStatus i18n underReviewEmail" name="underReview"></span>-->
+                                    </p>
+                                </div>
+                                <div class="align-right margin-top-2">
+                                    <button class="uploadFileBtn configServeBtn btn btn-success i18n" name="open"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--Allowed BA Agency Agent Type-->
+                <div class="col-md-6 col-sm-12">
+
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+
+                        </div>
+                        <div class="card-content">
+                            <div class="flex center space-between">
+                                <h5 class="i18n" name="SetAllowedDigitalCurrencyProxyType"></h5>
+                                <a class="card-title activator grey-text text-darken-4 font-size-14 i18n" name="viewAdded"></a>
+                            </div>
+                            <div class="margin-top-5">
+                                <div class="form-group-sm flex">
+                                    <div class="input-field">
+                                        <input type="text" id="baseBaTypeInput" class="form-control baseBaTypeInput">
+                                        <label for="baseBaTypeInput" class="i18n" name="digitalCurrencyType"></label>
+                                    </div>
+                                    <button class="btn btn-success btn-sm baseBaTypeBtn i18n" name="enactment"></button>
+                                </div>
+                                <!--List agent types-->
+                                <div>
+                                    <ul class="baseBaTypeBox flex wrap">
+                                        <li>BTC</li>
+                                        <li>BCH</li>
+                                        <li>ETH</li>
+                                        <li>LTC</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-reveal">
+                            <div class="flex center space-between">
+                                <h5 class="i18n" name="addedDigitalCurrencyProxyType"></h5>
+                                <span class="card-title grey-text text-darken-4">
+                                <i class="material-icons right">close</i>
+                            </span>
+                            </div>
+                            <div>
+                                <ul class="alreadyAddBaTypeBox flex wrap">
+                                    <li><span class="i18n" name="noData">noData</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Set Allowed Coin Agent Type-->
+                <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+
+                        </div>
+                        <div class="card-content">
+                            <div class="flex center space-between">
+                                <h5 class="i18n" name="setAllowedCoinAgentType"></h5>
+                                <a class="card-title activator grey-text text-darken-5 font-size-14 i18n" name="viewAdded"></a>
+                            </div>
+                            <div class="margin-top-5">
+                                <div class="form-group-sm flex">
+                                    <div class="input-field">
+                                        <input id="baseCaTypeInput" type="text"
+                                               class="form-control validate baseCaTypeInput">
+                                        <label for="baseCaTypeInput" class="i18n" name="bankAbbreviation"></label>
+                                    </div>
+                                    <button class="btn btn-success btn-sm baseCaTypeBtn i18n" name="enactment"></button>
+                                </div>
+                                <!--列举代理类型-->
+                                <div>
+                                    <ul class="baseCaTypeBox flex wrap">
+                                        <li class="icbc" title="icbc">ICBC</li>
+                                        <li class="boc" title="boc">BOC</li>
+                                        <li class="ccb" title="ccb">CCB</li>
+                                        <li class="abc" title="abc">ABC</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-reveal">
+                            <div class="flex center space-between">
+                                <h5 class="i18n" name="addedCurrencyProxyType"></h5>
+                                <span class="card-title grey-text text-darken-5">
+                                <i class="material-icons right">close</i>
+                            </span>
+                            </div>
+                            <div>
+                                <ul class="alreadyAddCaTypeBox flex wrap">
+                                    <li><span class="i18n" name="noData"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Set to allow us/ba/ca registration permission-->
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="card col m12 s12">
+                        <div class="card-content">
+                            <h5 class="i18n" name="registrationApplicationManagement"></h5>
+                            <div class="flex space-between">
+                                <div class="">
+                                    <div class="switchBox">
+                                        <h5 class="i18n" name="allowDigitalCurrencyAgentRegistration"></h5>
+                                        <div class="switch">
+                                            <label>
+                                                <span class="bitOff setOff ba_lock_off i18n" name="off"></span>
+                                                <input type="checkbox" class="bitRegister ba_lock_input">
+                                                <span class="lever"></span>
+                                                <span class="bitOn setOn ba_lock_on i18n" name="on"></span>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <p class="margin-top-5">
+                                                <span class="i18n" name="currentSetting"></span>:
+                                                <span class="bitWitchText setType ba_lock_text"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="switchBox">
+                                        <h5 class="i18n" name="allowLegalCurrencyAgentsToRegister"></h5>
+                                        <div class="switch">
+                                            <label>
+                                                <span class="cashOff setOff ca_lock_off i18n" name="off"></span>
+                                                <input type="checkbox" class="cashRegister ca_lock_input">
+                                                <span class="lever"></span>
+                                                <span class="cashOn setOn ca_lock_on i18n" name="on"></span>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <p class="margin-top-5">
+                                                <span class="i18n" name="currentSetting"></span>:
+                                                <span class="cashWitchText setType ca_lock_text"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="switchBox">
+                                        <h5 class="i18n" name="allowUsersToRegister"></h5>
+                                        <div class="switch">
+                                            <label>
+                                                <span class="userOff setOff user_lock_off"></span>
+                                                <input type="checkbox" class="userRegister user_lock_input">
+                                                <span class="lever"></span>
+                                                <span class="userOn setOn user_lock_on"></span>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <p class="margin-top-5">
+                                                <span class="i18n" name="currentSetting"></span>:
+                                                <span class="userWitchText setType user_lock_text"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--loading-->
+<div class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+        <div class="circle-clipper left">
+            <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="uploadImgModal" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <div class="row uploadImgRow">
+            <div class="col-md-10 col-sm-12">
+                <div class="">
+                    <div class=" ">
+                        <h5 class="i18n" name="pleaseUploadAnImageOfTheSelectedType"></h5>
+                        <div>
+                            <img src="" class="uploadImgSrc width-15" alt="">
+                        </div>
+                        <form id="uploadForm" method="GET" enctype="multipart/form-data">
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span class="i18n" name="file"></span>
+                                    <input type="file" name="file" multiple id="uploadFile">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text"
+                                           selectname="pleaseUploadAnImageOfTheSelectedType" selectattr="placeholder">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="align-right">
+                            <button class="btn btn-danger btn-sm cancel i18n" name="cancel">cancel</button>
+                            <button class="btn btn-success btn-sm baseBaTypeBtnConfirm i18n" name="determine"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap Js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!--language-->
+<script src="assets/language/jquery.i18n.properties.js"></script>
+<script src="assets/language/language.js"></script>
+
+<script src="assets/materialize/js/materialize.min.js"></script>
+
+<!-- Metis Menu Js -->
+<script src="assets/js/jquery.metisMenu.js"></script>
+
+<!-- layer Js -->
+<script src="assets/js/layer/layer.js"></script>
+
+<!-- sha Js -->
+<script src="assets/js/sha.js"></script>
+
+<!-- common Js -->
+<script src="assets/js/common.js"></script>
+
+<!-- Custom Js -->
+<script src="assets/js/main.js"></script>
+
+<!-- config Js -->
+<script src="assets/js/config.js"></script>
+</body>
+</html>

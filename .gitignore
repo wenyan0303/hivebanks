@@ -1,0 +1,4 @@
+.idea
+note
+.DS_Store
+src/inc/db_connect.php

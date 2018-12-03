@@ -1,0 +1,41 @@
+#news {
+    background: #000f29;
+}
+
+.news_nav, .news_list {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 5%;
+    color: #ffffff;
+}
+
+.news_nav li {
+    text-align: center;
+    padding: 3% 0;
+    border-bottom: 1px dashed;
+}
+
+.news_nav li a, .news_list a {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.news_nav li a.news_active {
+    color: #000f2b;
+}
+
+.news_nav li a:hover, .news_list a:hover {
+    color: #000f2b;
+}
+
+.news_list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    border-bottom: 1px dashed;
+}
+
+.accountNone {
+    display: none !important;
+}

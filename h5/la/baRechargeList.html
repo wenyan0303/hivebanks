@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta id="i18n_pagename" content="index-common">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HiveBanks</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection"/>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet"/>
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <!-- Custom Styles-->
+    <link href="assets/css/common.css" rel="stylesheet"/>
+    <!--pagination-->
+    <link rel="stylesheet" href="assets/css/pagination.css">
+    <!--jquery.datetimepicker.css-->
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="assets/css/baRechargeList.css">
+    <link rel="stylesheet" media="only screen and (max-width:767px)" href="assets/css/common_mobile.css">
+</head>
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand waves-effect waves-dark flex center" href="userList.html">
+                <!--<i class="large material-icons">track_changes</i>-->
+                <img src="assets/img/logo-3.png" alt="" class="width-15 margin-right-5">
+                <strong>HiveBanks</strong>
+            </a>
+
+            <div id="sideNav" class="waves-effect waves-dark" href=""><i class="material-icons dp48">toc</i></div>
+        </div>
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i
+                    class="fa fa-user fa-fw"></i> <b class="la_name"></b> <i
+                    class="material-icons right"></i></a></li>
+        </ul>
+    </nav>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="javascript:;" class="logOut">
+            <i class="fa fa-sign-out fa-fw"></i>
+            <span class="i18n" name="logout"></span>
+        </a>
+        </li>
+    </ul>
+
+    <!--/. NAV left  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <!--config-->
+                <li>
+                    <a href="config.html" class="waves-effect waves-dark">
+                        <i class="fa fa-dashboard"></i>
+                        <span class="i18n" name="config"></span>
+                    </a>
+                </li>
+                <!--charts-->
+                <li>
+                    <a href="report.html" class="waves-effect waves-dark">
+                        <i class="fa fa-bar-chart-o"></i>
+                        <span class="i18n" name="charts"></span>
+                    </a>
+                </li>
+                <!--management-->
+                <li>
+                    <a href="javascript:;" class="waves-effect waves-dark">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="i18n" name="management"></span>
+                        <span
+                                class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="userList.html" class="i18n" name="userList"></a>
+                        </li>
+                        <li>
+                            <a href="baList.html" class="i18n" name="bitCoinAgencyList"></a>
+                        </li>
+                        <li>
+                            <a href="caList.html" class="i18n" name="cashAgencyList"></a>
+                        </li>
+                    </ul>
+                </li>
+                <!--transaction-->
+                <li>
+                    <a href="javascript:;" class="active-menu waves-effect waves-dark">
+                        <i class="fa fa-sitemap"></i>
+                        <span class="i18n" name="transaction"></span>
+                        <span
+                                class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="userTransferList.html" class="i18n" name="userTransactionRecode"></a>
+                        </li>
+                        <li>
+                            <a href="baRechargeList.html" class="active-menu i18n" name="bitCoinAgencyRechargeRecord"></a>
+                        </li>
+                        <li>
+                            <a href="baWithdrawList.html" class="i18n" name="bitCoinAgencyWithdrawRecord"></a>
+                        </li>
+                        <li>
+                            <a href="caRechargeList.html" class="i18n" name="cashAgencyRechargeRecord"></a>
+                        </li>
+                        <li>
+                            <a href="caWithdrawList.html" class="i18n" name="cashAgencyWithdrawRecord"></a>
+                        </li>
+                    </ul>
+                </li>
+                <!--kyc Review-->
+                <li>
+                    <a href="javascript:;" class="waves-effect waves-dark"><i class="fa fa-lock"></i>
+                        <span class="i18n" name="kyc"></span>
+                        <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="userKyc.html" class="i18n" name="userKyc"></a>
+                        </li>
+                        <li>
+                            <a class="childMenu" name="" href="#!">
+                                <span class="i18n" name="baKyc"></span>
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-third-level none">
+                                <li>
+                                    <a href="baBindKyc.html" class="waves-effect waves-dark i18n" name="bindKyc"></a>
+                                </li>
+                                <li>
+                                    <a href="baRegisterKyc.html" class="i18n" name="registrationReviewList"></a>
+                                </li>
+                                <li>
+                                    <a href="baWithdrawAddressKyc.html" class="i18n" name="withdrawAddressReviewList"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="childMenu" name="" href="#!">
+                                <span class="i18n" name="caKyc"></span>
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-third-level none">
+                                <li>
+                                    <a href="caBindKyc.html" class="waves-effect waves-dark i18n" name="bindKyc"></a>
+                                </li>
+                                <li>
+                                    <a href="caRegisterKyc.html" class="i18n" name="registrationReviewList"></a>
+                                </li>
+                                <li>
+                                    <a href="caWithdrawAddressKyc.html" class="i18n" name="withdrawAddressReviewList"></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!--fault Report-->
+                <li>
+                    <a href="failureReport.html" class="waves-effect waves-dark">
+                        <i class="fa  fa-file-text-o"></i>
+                        <span class="i18n" name="declarationList"></span>
+                    </a>
+                </li>
+                <!--news-->
+                <li>
+                    <a href="pressReleases.html" class="waves-effect waves-dark">
+                        <i class="fa fa-plus"></i>
+                        <span class="i18n" name="pressReleases"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header i18n" name="bitCoinAgencyRechargeRecord"></h1>
+            <ol class="breadcrumb">
+                <li><a href="#" class="i18n" name="transaction">Transaction</a></li>
+                <li class="active"><span class="i18n" name="bitCoinAgencyRechargeRecord"></span></li>
+            </ol>
+
+        </div>
+        <div id="page-inner">
+            <div class="row card padding-bottom-2">
+                <div class="col-md-12 col-sm-12 card-content">
+                    <div class="flex space-between">
+                        <h5 class="i18n" name="filter"></h5>
+                        <button class="btn btn-success btn-sm searchBtn i18n" name="search">搜索</button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <form>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="from_time" id="from_time_chg"/>
+                            <label for="from_time_chg" class="i18n" name="startTime">起始时间</label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="to_time" id="to_time_chg"/>
+                            <label for="to_time_chg" class="i18n" name="deadline">截止时间</label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="tx_time" id="tx_time_chg"/>
+                            <label for="tx_time_chg" class="i18n" name="transactionHour"> </label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="qa_id" id="qa_id_chg"/>
+                            <label for="qa_id_chg" class="i18n" name="requestId"> </label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="us_id" id="us_id_chg"/>
+                            <label for="us_id_chg" class="i18n" name="requestUserId"> </label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="us_account_id" id="us_account_id_chg"/>
+                            <label for="us_account_id_chg" class="i18n" name="userAccountId">用户账号ID</label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="asset_id" id="asset_id_chg"/>
+                            <label for="asset_id_chg" class="i18n" name="asset_id"> </label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="ba_account_id" id="ba_account_id_chg"/>
+                            <label for="ba_account_id_chg" class="i18n" name="agentAccountId">代理商账号ID</label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="tx_hash" id="tx_hash_chg"/>
+                            <label for="tx_hash_chg" class="i18n" name="tx_hash"> </label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="base_amount" id="base_amount_chg"/>
+                            <label for="base_amount_chg" class="i18n" name="cashWithdrawalAmount"> </label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="bit_amount" id="bit_amount_chg"/>
+                            <label for="bit_amount_chg" class="i18n" name="digitalCurrencyAmount"> </label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="tx_detail" id="tx_detail_chg"/>
+                            <label for="tx_detail_chg" class="i18n" name="transactionDetails"> </label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="tx_fee" id="tx_fee_chg"/>
+                            <label for="tx_fee_chg" class="i18n" name="transactionFees"> </label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="tx_type" id="tx_type_chg"/>
+                            <label for="tx_type_chg" class="i18n" name="transactionType"> </label>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="qa_flag" id="qa_flag_chg"/>
+                            <label for="qa_flag_chg" class="i18n" name="orderStatus"> </label>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <input type="checkbox" value="ba_id" id="ba_id_chg"/>
+                            <label for="ba_id_chg" class="i18n" name="digitalCurrencyAgentId"> </label>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="">
+                    <div class="none col-md-3 col-sm-12 from_time">
+                        <div class="">
+                            <h5><span class="i18n" name="startingTime"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="from_time" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 to_time">
+                        <div class="">
+                            <h5><span class="i18n" name="endTime"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="to_time" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 tx_time">
+                        <div class="">
+                            <h5><span class="i18n" name="transactionHour"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="tx_time" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 qa_id">
+                        <div class="">
+                            <h5><span class="i18n" name="requestId"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="qa_id" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="none col-md-3 col-sm-12 us_id">
+                        <div class="">
+                            <h5><span class="i18n" name="requestUserId"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="us_id" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 us_account_id">
+                        <div class="">
+                            <h5><span class="i18n" name="userAccountId"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="us_account_id" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 asset_id">
+                        <div class="">
+                            <h5><span class="i18n" name="asset_id"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="asset_id" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 ba_account_id">
+                        <div class="">
+                            <h5><span class="i18n" name="agentAccountId"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="ba_account_id" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="none col-md-3 col-sm-12 tx_hash">
+                        <div class="">
+                            <h5><span class="i18n" name="tx_hash"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="tx_hash" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 base_amount">
+                        <div class="">
+                            <h5><span class="i18n" name="cashWithdrawalAmount"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="base_amount" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 bit_amount">
+                        <div class="">
+                            <h5><span class="i18n" name="digitalCurrencyAmount"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="bit_amount" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 tx_detail">
+                        <div class="">
+                            <h5><span class="i18n" name="transactionDetails"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="tx_detail" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="none col-md-3 col-sm-12 tx_fee">
+                        <div class="">
+                            <h5><span class="i18n" name="transactionFees"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="tx_fee" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 tx_type">
+                        <div class="">
+                            <h5><span class="i18n" name="transactionType"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="tx_type" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 qa_flag">
+                        <div class="">
+                            <h5><span class="i18n" name="orderStatus"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="qa_flag" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="none col-md-3 col-sm-12 ba_id">
+                        <div class="">
+                            <h5><span class="i18n" name="digitalCurrencyAgentId"> </span>:</h5>
+                            <div class="input-field">
+                                <input id="ba_id" type="text" class="validate color-black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="card-content table-responsive">
+                            <table class="bordered striped centered highlight">
+                                <thead>
+                                <tr>
+                                    <th><span class="i18n" name="ba_id">ba_id</span></th>
+                                    <th><span class="i18n" name="us_id">us_id</span></th>
+                                    <th><span class="i18n" name="asset_id">asset_id</span></th>
+                                    <th><span class="i18n" name="base_amount">base_amount</span></th>
+                                    <th><span class="i18n" name="re_bit_amount">bit_amount</span></th>
+                                    <th><span class="i18n" name="tx_hash">tx_hash</span></th>
+                                    <th><span class="i18n" name="tx_time">tx_time</span></th>
+                                    <th><span class="i18n" name="qa_flag">qa_flag</span></th>
+                                </tr>
+                                </thead>
+                                <tbody id="baRecharge">
+                                <tr>
+                                    <td colspan="8"><span class="i18n" name="loading"> </span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--loading-->
+<div class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+        <div class="circle-clipper left">
+            <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+    </div>
+</div>
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+<script src="assets/js/jquery-1.10.2.js"></script>
+
+<!-- Bootstrap Js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/materialize/js/materialize.min.js"></script>
+
+<!-- Metis Menu Js -->
+<script src="assets/js/jquery.metisMenu.js"></script>
+
+<!--datetimepicker.full.js-->
+<script src="assets/js/jquery.datetimepicker.full.js"></script>
+
+<!--pagination-->
+<script src="assets/js/pagination.js"></script>
+
+<!--layer-->
+<script src="assets/js/layer/layer.js"></script>
+
+<!--language-->
+<script src="assets/language/jquery.i18n.properties.js"></script>
+<script src="assets/language/language.js"></script>
+
+<!--common-->
+<script src="assets/js/common.js"></script>
+
+<!-- Custom Js -->
+<script src="assets/js/main.js"></script>
+
+<!--baRecharge.js-->
+<script src="assets/js/baRechargeList.js"></script>
+<!--<script src="assets/js/custom-scripts.js"></script>-->
+
+
+</body>
+
+</html>
